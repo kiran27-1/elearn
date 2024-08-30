@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">EduLearn</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="login-btn" onclick="showLogin()">Login</button>
+        </nav>
+        <div class="hero">
+            <h1>Welcome to EduLearn</h1>
+            <p>Leveraging Technology for Accessible and Enjoyable Learning</p>
+            <a href="#courses" class="cta-btn">Browse Courses</a>
+        </div>
+    </header>
+
+    <section id="courses" class="courses">
+        <h2>Our Courses</h2>
+        <div class="cards-container">
+            <div class="course-card">
+                <h3>Web Development</h3>
+                <p>Learn to build modern websites and applications.</p>
+            </div>
+            <div class="course-card">
+                <h3>Data Science</h3>
+                <p>Master the art of data analysis and visualization.</p>
+            </div>
+            <div class="course-card">
+                <h3>Artificial Intelligence</h3>
+                <p>Dive into AI and machine learning technologies.</p>
+            </div>
+            <div class="course-card">
+                <h3>Machine Learning</h3>
+                <p>Explore the world of machine learning with hands-on projects.</p>
+            </div>
+            <div class="course-card">
+                <h3>Python</h3>
+                <p>Get started with Python, one of the most popular programming languages.</p>
+            </div>
+            <div class="course-card">
+                <h3>Java</h3>
+                <p>Learn Java, a versatile and powerful programming language.</p>
+            </div>
+            <div class="course-card">
+                <h3>SQL</h3>
+                <p>Master SQL for efficient data management and analysis.</p>
+            </div>
+            <div class="course-card">
+                <h3>Video Editing</h3>
+                <p>Learn professional video editing techniques and software.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <div class="cards-container">
+            <div class="about-card">
+                <p>EduLearn is committed to making education more accessible and enjoyable through technology. Our platform offers a wide range of courses designed to empower learners at every stage.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="cards-container">
+            <div class="contact-card">
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="login-modal">
+        <div class="login-modal-content">
+            <span class="close-btn" onclick="closeLogin()">&times;</span>
+            <h2>Login</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 EduLearn. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
